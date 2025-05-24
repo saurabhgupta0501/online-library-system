@@ -1,0 +1,514 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.book-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+}
+
+.search-bar {
+  padding: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.book-details {
+  padding: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0066cc;
+}
+
+.add-book form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.add-book label {
+  display: block;
+  margin-top: 1rem;
+}
+
+
+.add-book input,
+.add-book select,
+.add-book textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.add-book textarea {
+  height: 100px;
+}
+
+.add-book button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.not-found {
+  text-align: center;
+  padding: 2rem;
+}
+
+.not-found a {
+  color: #0066cc;
+}
+
+.home-page {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fdfcf8;
+  color: #333;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  color: #3e3e3e;
+  margin-bottom: 0.5rem;
+}
+
+.home-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.category-list {
+  flex: 1 1 250px;
+}
+
+.popular-books {
+  flex: 2 1 600px;
+}
+
+.popular-books h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.add-book {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-book h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.add-book form div {
+  margin-bottom: 1.2rem;
+}
+
+.add-book label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.add-book input,
+.add-book select,
+.add-book textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.add-book input:focus,
+.add-book select:focus,
+.add-book textarea:focus {
+  border-color: #0a66c3;
+  outline: none;
+}
+
+.add-book textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-book .error {
+  display: block;
+  color: #e74c3c;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.add-book button[type="submit"] {
+  width: 100%;
+  background-color: #0a66c3;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-book button[type="submit"]:hover {
+  background-color: #084a9b;
+}
+
+.book-details {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+
+.book-details h1 {
+  font-size: 2.2rem;
+  color: #0a66c3;
+  margin-bottom: 0.5rem;
+}
+
+.book-details h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.book-details p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.book-details strong {
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #0a66c3;
+  font-weight: 500;
+  border: 1px solid #0a66c3;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #0a66c3;
+  color: white;
+}
+
+.browse-books {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', sans-serif;
+}
+
+.browse-books h1 {
+  font-size: 2.2rem;
+  color: #0a66c3;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.browse-books h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 1rem 0;
+  border-bottom: 2px solid #0a66c3;
+  padding-bottom: 0.3rem;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.browse-books p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.not-found a {
+  text-decoration: none;
+  background-color: #0a66c3;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.not-found a:hover {
+  background-color: #084a9b;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.book-card h3 {
+  font-size: 1.3rem;
+  color: #0a66c3;
+  margin-bottom: 0.6rem;
+}
+
+.book-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.book-card a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0a66c3;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.book-card a:hover {
+  background-color: #084a9b;
+}
+
+.category-list {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  font-family: 'Roboto', sans-serif;
+  max-width: 250px;
+}
+
+.category-list h3 {
+  font-size: 1.4rem;
+  color: #0a66c3;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0a66c3;
+  padding-bottom: 0.4rem;
+}
+
+.category-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 0.8rem;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.category-list a:hover {
+  color: #0a66c3;
+  padding-left: 8px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #0a66c3;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.7rem 1.2rem;
+  background-color: #0a66c3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #084a9b;
+}
+
+
+
+
+
