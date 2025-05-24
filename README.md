@@ -26,5 +26,5 @@ This is a React-based online library system that allows users to browse books by
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/online-library-system.git
+   git clone https://github.com/saurabhgupta0501/online-library-system
    cd online-library-system
